@@ -1,0 +1,19 @@
+.links{
+    position: relative;
+}
+
+.links::after{
+    content: "";
+    position: absolute;
+    background-color: #15803d;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    transition: width 1s, left 1s;
+}
+  
+  .links:hover::after {
+    width: 100%;
+    left: 0;
+  }
