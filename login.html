@@ -3,33 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- flowbite CDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- style -->
+     <link rel="stylesheet" href="CSS/login.css">
+
     <title>Login | DemiKita</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    </style>
 </head>
-<body style="width: 100vw; height: 100vh;" class="flex">
-    <section class="w-full h-full flex bg-white">
-        <div id="left" class="w-1/2 h-full flex flex-col justify-center">
-            <img style="height: 750px;" class="rounded-lg w-11/12 mx-auto" src="https://images.unsplash.com/photo-1632089594835-aa8a2a9471cc?q=80&w=2810&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="forest">
-        </div>
-        <div id="right" class="w-1/2 h-full flex flex-col">
-            <h1 class="text-title text-3xl font-semibold mx-auto ">Please Login To Continue!</h1>
-            <form action="" class="w-4/5 flex flex-col mx-auto">
-                <div class="input-name flex justify-between">
-                    <input type="text" class="w-1/2 ml-11">
-                    <input type="text" class="w-1/2">
-                </div>
-            </form>
-        </div>
+<body>
+    <section>
+        <h1>Log In to Continue!</h1>
+        <p>Log in for get access to all features</p>
+        <form action="">
+            <input placeholder="Name" type="text" name="name" id="name" required>
+            <input placeholder="Email" type="email" required>
+            <input placeholder="Password" type="password" name="password" id="password" required>
+            <button type="submit">Log In</button>
+        </form> 
     </section>
 </body>
 </html>
