@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | DemiKita</title>
 
+    <!-- icon link -->
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<script src="https://kit.fontawesome.com/e164a56a3b.js" crossorigin="anonymous"></script>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -25,6 +30,8 @@
     <!-- Link CSS -->
      <link rel="stylesheet" href="CSS/icon.css">
      <link rel="stylesheet" href="CSS/hello.css">
+     <link rel="stylesheet" href="CSS/biasaditanyakan.css">
+     <link rel="stylesheet" href="CSS/footer.css">
 
      <!--? Hamburger Script -->
     <script>
@@ -63,19 +70,15 @@
     </script>
 
 </head>
-<body>
+<body class="bg-black" >
 
  <section>
-
     <div class="bg-black h-full">
-
-   
         <!-- todo Hello -->
       <div class="span-hello-container">
         <span class="span-hello"></span>
     </div>
         <!-- todo Hello -->
-
 
       <!-- Navbar -->
             <nav class="bg-transparent border-transparent fixed w-full z-20 top-0 start-0 border-b ">
@@ -85,7 +88,7 @@
               </a>
               <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                   <button type="button" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-Green-800">Get started</button>
-                  <button onclick="navres()" id="burgerMenu" data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                  <button onclick="navRes()" id="burgerMenu" data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -113,7 +116,7 @@
           <!-- Navbar -->
 
           <!-- Navbar Mobile -->
-          <div id="navSlide" class="hidden" role="dialog" aria-modal="true">
+          <div id="navSlide" class="sm:hidden" role="dialog" aria-modal="true">
             <div class="fixed inset-0 z-50"></div>
             <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
               <div class="flex items-center justify-between">
@@ -291,8 +294,8 @@
               <div class="flex flex-col sm:flex-row mt-10">
                 <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                   <div class="flex flex-col items-center text-center justify-center">
-                    <h2 class="text-7xl md:text-3xl font-bold text-start "><span class="bg-gradient-to-r from-green-900 via-green-600 to-green-300 inline-block text-transparent bg-clip-text italic text-7xl font-light">Sampah</span><br> Plastik Di Indonesia🇮🇩</h2>
-                    <div class="w-12 h-1 bg-green-500rounded mt-2 mb-4"></div>
+                    <h2 class="text-7xl md:text-3xl font-bold text-start"><span class="bg-gradient-to-r from-green-900 via-green-600 to-green-300 inline-block text-transparent bg-clip-text italic text-7xl font-light md:text-6xl">Sampah</span><br> Plastik Di Indonesia🇮🇩</h2>
+                    <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
                     <p class="text-base text-white  ">Kantong plastik adalah jenis sampah yang sulit terurai oleh proses alam (non biodegradable) dan merupakan salah satu pencemar xenobiotik (pencemar yang tidak dikenal oleh sistem biologis di lingkungan mengakibatkan senyawa pencemar terakumulasi di alam).</p>
                   </div>
                 </div>
@@ -325,7 +328,129 @@
               </div>
             </div>
           </div>
+          <div data-aos="fade-up" class="button-data flex justify-center items-center">
+            <a href="#"
+                class="relative  inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1">
+                <span
+                    class="absolute inset-0 w-full h-full bg-gradient-to-br from-green-900 via-green-600 to-green-400"></span>
+                <span
+                    class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                <span class="relative text-white">Ayo Kontibusi</span>
+            </a>
+          </div>
         </section>
          <!-- sampah plastik -->
+
+         <section>
+          <div class="body-pertanyaan bg-black mt-20">
+            <div class="container-5">
+                <div data-aos="flip-up" class="title w-auto flex justify-center h-auto md:mb-5">
+                    <h1 class="text-4xl md:text-4xl font-extrabold text-white mt-20 "> <span class="text-white font-bold">BIASA DI</span> <span class="bg-gradient-to-r from-green-900 via-green-600 to-green-300 inline-block text-transparent bg-clip-text italic text-5xl font-semibold">TANYAKAN</span> 🤔</h1>
+                </div>
+              
+        
+              <div data-aos="flip-up" class="tab">
+                <input type="radio" name="acc" id="acc-1">
+                <label for="acc-1">
+                  <h2>01</h2>
+                  <h3>Apa itu DemiKita?</h3>
+                </label>
+                <div class="content-pertanyaan">
+                  <p>DemiKita adalah sebuah website yang bertujuan untuk meningkatkan kesadaran masyarakat <br> tentang pentingnya menjaga kebersihan lingkungan.</p>
+                </div>
+              </div>
+        
+              <div data-aos="flip-up" class="tab">
+                <input type="radio" name="acc" id="acc-2">
+                <label for="acc-2">
+                  <h2>02</h2>
+                  <h3>Apa saja fitur yang tersedia di website DemiKita?</h3>
+                </label>
+                <div class="content-pertanyaan">
+                  <p>Website DemiKita memiliki berbagai fitur, pertama fitur kontibusi untuk kebersihan lingkungan <br> berisi jadwal kegiatan bersih-bersih di berbagai tempat di seluruh indonesia lalu bisa mendaftarkan diri nya <br> untuk kontribusi dan fitur kedua adalah AI yang bisa menjawab segala kesulitan tentang kebersihan lingkungan.</p>
+                </div>
+              </div>
+        
+              <div data-aos="flip-up" class="tab">
+                <input type="radio" name="acc" id="acc-3">
+                <label for="acc-3">
+                  <h2>03</h2>
+                  <h3>Apakah DemiKita mengadakan kegiatan kontribusi secara rutin?</h3>
+                </label>
+                <div class="content-pertanyaan">
+                  <p>Ya, DemiKita secara rutin mengadakan berbagai kegiatan seperti aksi bersih-bersih <br> seminar tentang lingkungan, dan workshop daur ulang.</p>
+                </div>
+              </div>
+        
+              <div data-aos="flip-up" class="tab">
+                <input type="radio" name="acc" id="acc-4">
+                <label for="acc-4">
+                  <h2>04</h2>
+                  <h3>Bagaimana DemiKita berkontribusi pada masalah lingkungan yang lebih besar?</h3>
+                </label>
+                <div class="content-pertanyaan">
+                  <p>DemiKita berkontribusi dengan meningkatkan kesadaran masyarakat tentang isu-isu <br> lingkungan mengedukasi tentang dampak pencemaran, serta mendorong <br> tindakan kolektif untuk menjaga kebersihan lingkungan.</p>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+         </section>
+
+
+         <footer>
+          <div class="footer-container">
+              <div class="footer-left">
+                  <a href="#home"
+                      class="self-center text-2xl font-bold whitespace-nowrap text-[#ffffff] transition-all duration-1000">Demi <span class="self-center text-2xl font-bold whitespace-nowrap text-green-700 transition-all duration-1000">Kita</span></a>
+                  <p>3995, Jakarta, Indonesia</p>
+                  <p>Call us: +62 (850) 455 52 93</p>
+                  <div class="social-icons">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+              </div>
+
+              <div class="footer-middle">
+                  <h3>Explore</h3>
+                  <ul>
+                      <li><a href="#">Features</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">FAQs</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Login</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-middle">
+                  <h3>Legal</h3>
+                  <ul>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Terms of Services</a></li>
+                      <li><a href="#">Documentations</a></li>
+                      <li><a href="#">Site Map</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-right">
+                  <h3>Subscribe</h3>
+                  <p>Subscribe to get the latest news from us</p>
+                  <form>
+                      <input type="email" placeholder="Email address" />
+                      <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                  </form>
+              </div>
+          </div>
+
+          <div class="footer-bottom">
+              <p>&copy; 2024 DemiKita. All rights reserved.</p>
+          </div>
+      </footer>
+
+
+        
+        
+       
 </body>
 </html>
