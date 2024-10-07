@@ -23,15 +23,5 @@ tailwind.config ={
 // TEXT CAROUSEL END
 
 // navres
-const btnBurger = document.getElementById('burgermenu')
-const navslide = document.getElementById('navSlide')
-const btnCloseNav = document.getElementById('btnCloseNav')
 
-function navres() {
-    console.log(navslide)
-    navslide.classList.add('inline')
-}
 
-function closeNav() {
-    navslide.classList.remove('inline')
-}
