@@ -1,4 +1,4 @@
-const hello_arr = ['Welcome to,', 'DemiKita'];
+const hello_arr = ['Kontribusi'];
 
 window.onload = function () {
     const spanHelloContainer = document.querySelector(".span-hello-container");
