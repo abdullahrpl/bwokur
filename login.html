@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+     <!-- flowbite CDN -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
     <!-- Poppins Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,23 +22,48 @@
 
     <title>Login | DemiKita</title>
 </head>
-<body>
-    <section>
-        <h1>Log In to Continue!</h1>
-        <p>Log in for get access to all features</p>
+<body class="h-screen w-screen flex justify-center items-center bg-gradient-to-tr from-black via-green-800 to-green-900">
+    <section class="bg-green-800 p-8 rounded-lg shadow-xl w-96">
+        <h1 class="text-white text-2xl font-bold mb-6 text-center">Bergabung Untuk Melanjutkan!</h1>
+
         <form action="index.html">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Username" required>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Password" required>
-
-            <div class="remember-password">
-                <input type="checkbox" class="remember" id="remember" name="remember">
-                <label for="remember">Remember Password</label>
+            <!-- Name Input -->
+            <div class="mb-4">
+                <label for="name" class="block text-gray-300 mb-2">Name</label>
+                <input type="text" id="name" class="w-full p-3 bg-gray-500 text-white border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Name here" required>
             </div>
-            <button onclick="login()" type="submit">Login</button>
+
+            <!-- Email Input -->
+            <div class="mb-4">
+                <label for="email" class="block text-gray-300 mb-2">Email</label>
+                <input type="email" id="email" class="w-full p-3 bg-gray-500 text-white border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Email here"required>
+            </div>
+
+            <!-- Password Input -->
+            <div class="mb-6"></div>
+                <label for="password" class="block text-gray-300 mb-2">Password</label>
+                <input type="password" id="password" class="w-full p-3 bg-gray-500 text-white border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Password here" required>
+            </div>
+
+            <!-- btn login -->
+            <button class="mx-auto mt-10 flex justify-center align-middle relative items-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1">
+                <span
+                    class="absolute inset-0 w-full h-full bg-gradient-to-br from-green-900 via-green-600 to-green-400"></span>
+                <span
+                    class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                <span class="relative text-white">Daftar Sekarang</span>
+            </button>
         </form>
     </section>
+
+    <!-- login js -->
+    <script>
+        function login() {
+            const password = document.getElementById("password").value;
+            const username = document.getElementById("username").value;
+            localStorage.setItem('username', username);
+        }
+    </script>
 </body>
 </html>
