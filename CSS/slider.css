@@ -81,7 +81,7 @@
     }
 
     .item {
-        width: 80vw; /* Adjust width for mobile devices */
+        width: 40vw; /* Adjust width for mobile devices */
         height: calc(var(--index) * 8); /* Adjust height for mobile devices */
         margin-bottom: 1rem; /* Space between items */
     }
@@ -104,7 +104,7 @@
 
 @media (max-width: 420px) {
     .item {
-        width: 95vw;
+        width: 55vw;
         height: calc(var(--index) * 6);
     }
 
