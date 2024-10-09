@@ -1,0 +1,160 @@
+:root{
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+}
+
+/* Global settings */
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Horizontal layout for larger screens */
+.items{
+    display: flex;
+    gap: 0.4rem;
+    perspective: calc(var(--index) * 35);
+}
+
+/* Item settings */
+.item{
+    width: calc(var(--index) * 3);
+    height: calc(var(--index) * 12);
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    filter: grayscale(1) brightness(.5);
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
+    position: relative; /* Important to ensure ::before and ::after work properly */
+}
+
+.item::before, .item::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    right: calc(var(--index) * -1);
+}
+
+.item::after{
+    left: calc(var(--index) * -1);
+}
+
+/* Hover and focus states */
+.items .item:hover{
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 10));
+}
+
+.items .item:active, .items .item:focus {
+    width: 28vw;
+    filter: inherit;
+    z-index: 100;
+    transform: translateZ(calc(var(--index) * 10));
+    margin: 0 .45vw;
+}
+
+/* Responsive media queries */
+@media (max-width: 1200px) {
+    .item {
+        width: calc(var(--index) * 2.5);
+        height: calc(var(--index) * 10);
+    }
+}
+
+@media (max-width: 992px) {
+    .item {
+        width: calc(var(--index) * 2.2);
+        height: calc(var(--index) * 9);
+    }
+}
+
+/* Adjust layout to vertical for smaller screens */
+@media (max-width: 768px) {
+    .items {
+        flex-direction: column;
+        align-items: center; /* Ensure elements are centered vertically */
+    }
+
+    .item {
+        width: 40vw; /* Adjust width for mobile devices */
+        height: calc(var(--index) * 8); /* Adjust height for mobile devices */
+        margin-bottom: 1rem; /* Space between items */
+    }
+
+    .wrapper{
+        margin-bottom: 30rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .item {
+        width: 90vw;
+        height: calc(var(--index) * 7);
+    }
+
+    .wrapper{
+        margin-bottom: 30rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .item {
+        width: 55vw;
+        height: calc(var(--index) * 6);
+    }
+
+    .wrapper{
+        margin-bottom: 30rem;
+    }
+}
+
+/* Adjust z-index and animations based on hover (same as your original) */
+.items .item:hover + *{
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+}
+
+.items .item:hover + * + *{
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+}
+
+.items .item:hover + * + * + *{
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -3;
+}
+
+.items .item:hover + * + * + * + *{
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
+    z-index: -4;
+}
+
+/* Left side animation */
+.items .item:has( + :hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+
+.items .item:has( + * + :hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+
+.items .item:has( + * + * + :hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+
+.items .item:has( + * + * + * + :hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
+}
