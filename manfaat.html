@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -56,9 +56,20 @@
                                 class="text-green-700">Kita</Span></span>
                     </a>
                     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                        <button type="button"
-                            class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-Green-800">Get
-                            started</button>
+                        <a id="login-txt" href="login.html" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-Green-800">Daftar</a>
+                        <script>
+                        // SCRIPT FOR BUTTON LOGIN
+                        const userLogin = document.getElementById("login-txt")
+                        const userGet = localStorage.getItem('username')
+                        const loginMobile = document.getElementById("txt-mobile")
+    
+                        if (userGet) {
+                            userLogin.href = '#'
+                            loginMobile.href = '#'
+                            userLogin.textContent = userGet
+                            loginMobile.textContent = userGet
+                        }
+                        </script>
                         <button onclick="navRes()" id="burgerMenu" data-collapse-toggle="navbar-sticky" type="button"
                             class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                             aria-controls="navbar-sticky" aria-expanded="false">
@@ -128,9 +139,8 @@
                                     DemiKita</a>
                             </div>
                             <div class="py-6">
-                                <a href="#"
-                                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log
-                                    in</a>
+                                <a id="txt-mobile" href="login.html"
+                                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Daftar</a>
                             </div>
                         </div>
                     </div>
