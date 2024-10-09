@@ -1,137 +1,148 @@
-/* ANIMATIONS */
 
-/* HERO */
-#navbar{
-    animation: fadeInDown 1s ease-in-out forwards;
-    animation-delay: 2.5s;
-}
-#herocomp1{
-    animation: pop 1s ease-in-out forwards;
-    animation-delay: 2.5s;
-}
-#herocomp2{
-    animation: pop 1s ease-in-out forwards;
-    animation-delay: 2s;
-}
-/* HERO END */
-
-/* INFORMASI */
-#informasiTitle{
-    animation: fadeInRight linear;
+/* .wrapper{
+    animation: appear1 5s linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-}
-#informasiContent{
-    animation: fadeInLeft linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-}
-#infimg1{
-    animation: fadeInRight linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-}
-#infimg2{
-    animation: fadeInUp linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-}
-#infimg3{
-    animation: fadeInRight linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-}
-#infimg4{
-    animation: fadeInLeft linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-}
-#infimg5{
-    animation: fadeInUp linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-}
-#infimg6{
-    animation: fadeInLeft linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-}
-/* INFORMASI END */
+    animation-range: entry 0%, cover 40%;
+} */
 
-/* DATA */
-#datatitle{
-    animation: pop linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-}
-/* DATA END */
 
-/* KEYFRAMES */
-@keyframes pop {
-    from{
-        scale: 1.2;
-    } to{
-        scale: 1;
-    }
-}
+/* animation frame */
 
-@keyframes fadeOutDown {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
+@keyframes popupFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
     }
-    100% {
-        opacity: 0;
-        transform: translateY(70px);
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-}
+  }
+  
+  /* keyframe area */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes appear1 {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
 
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(70px);
-        visibility: visible;
+  @keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(100% 100% 0
+      0);
+      scale: 0.5;
     }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+      scale: 1;
 
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-        visibility: visible;
     }
-}
+  }
 
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-70px);
+  @keyframes appear2 {
+    from {
+      opacity: 0;
+      transform: translateX(-90px);
+      scale: 0.5;
     }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+      scale: 1;
 
-    100% {
-        opacity: 1;
-        transform: translateY(0);
     }
-}
-
-@keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(-70px);
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(150px);
+      opacity: 0;
     }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
+    to {
+      transform: translateY(0);
+      opacity: 1;
     }
-}
-
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(70px);
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
     }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
+    to {
+      transform: rotate(360deg);
     }
-}
+  }
+  
+  @keyframes slideLeft {
+    from {
+      transform: translateX(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideRight {
+    from {
+      transform: translateX(-40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* keyframe khusus */
+  
+  @keyframes slideLeft1 {
+    from {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideRight1 {
+    from {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* keyframe khusus end */
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
