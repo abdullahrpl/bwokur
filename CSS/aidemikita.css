@@ -1,0 +1,108 @@
+.AI-container {
+    width: auto;
+    background-size: cover;
+    max-width: 100vw;
+    height: 100vh;
+    margin: 60px 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chat-container {
+    width: 90%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 5px rgba(31, 38, 135, 0.37);
+    overflow: hidden;
+    animation: muncul 2s ease-in;
+    border: 5px solid green;
+  }
+  
+  .AI-container::after {
+    content: "";
+    position: absolute;
+    left: 20%;
+    top: 16%;
+    object-fit: cover;
+    width: 400px;
+    height: 200px;
+    animation: fadeInRight 2s ease-in;
+  }
+  
+  #chatBox {
+    width: auto;
+    height: 450px;
+    overflow-y: scroll;
+    padding: 25px;
+    background-color: #ffffffe6;
+  }
+  
+  #chatBox p {
+    margin: 15px 0;
+    line-height: 1.6;
+    color: green;
+    background-color: #8b45131a;
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 80%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 1px solid green;
+  }
+  
+  #chatBox p:nth-child(odd) {
+    align-self: flex-start;
+    background-color: #1883685c;
+  }
+  
+  #chatBox p:nth-child(even) {
+    align-self: flex-end;
+    background-color: green;
+    margin-left: auto;
+  }
+  
+  #chatBox p strong {
+    color: green;
+    font-weight: bold;
+  }
+  
+  #chatForm {
+    display: flex;
+    padding: 20px;
+    background-color: green;
+  }
+  
+  #userInput {
+    flex-grow: 1;
+    padding: 15px;
+    border: 1px solid green;
+    outline: none;
+    border-radius: 25px 0 0 25px;
+    font-size: 14px;
+    background-color: #ffffffe6;
+    color: green;
+  }
+  
+  #userInput::placeholder {
+    color: green;
+  }
+  
+  .btn-AI {
+    padding: 15px 30px;
+    background: white;
+    color: green;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-AI:hover {
+    transform: scale(1.05);
+  }
+  
