@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -61,9 +61,20 @@
                                 class="text-green-700">Kita</Span></span>
                     </a>
                     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                        <button type="button"
-                            class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-Green-800">Get
-                            started</button>
+                        <a id="login-txt" href="login.html" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-Green-800">Daftar</a>
+                        <script>
+                        // SCRIPT FOR BUTTON LOGIN
+                        const userLogin = document.getElementById("login-txt")
+                        const userGet = localStorage.getItem('username')
+                        const loginMobile = document.getElementById("txt-mobile")
+    
+                        if (userGet) {
+                            userLogin.href = '#'
+                            loginMobile.href = '#'
+                            userLogin.textContent = userGet
+                            loginMobile.textContent = userGet
+                        }
+                        </script>
                         <button onclick="navRes()" id="burgerMenu" data-collapse-toggle="navbar-sticky" type="button"
                             class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                             aria-controls="navbar-sticky" aria-expanded="false">
@@ -92,7 +103,7 @@
                                     class="block py-2 px-3 text-green-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-green-700  dark:hover:bg-green-700 md:dark:hover:bg-transparent dark:border-gray-700 hover:text-lg links">Manfaat</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="aidemikita.html"
                                     class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 hover:text-lg links">AI
                                     DemiKita</a>
                             </li>
@@ -124,18 +135,14 @@
                     <div class="mt-6 flow-root">
                         <div class="-my-6 divide-y divide-gray-500/10">
                             <div class="space-y-2 py-6">
-                                <a href="#"
-                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contribute</a>
-                                <a href="#"
-                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Benefits</a>
-                                <a href="#"
-                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">AI
-                                    DemiKita</a>
+                                <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
+                                <a href="kontribusi.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kontribusi</a>
+                                <a href="manfaat.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Manfaat</a>
+                                <a href="aidemikita.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">AI DemiKita</a>
                             </div>
                             <div class="py-6">
-                                <a href="#"
-                                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log
-                                    in</a>
+                                <a id="txt-mobile" href="login.html"
+                                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Daftar</a>
                             </div>
                         </div>
                     </div>
@@ -165,8 +172,8 @@
                 <div class="mx-auto  max-w-2xl py-32 sm:py-48 lg:py-56">
                     <div class="text-center">
                         <h1 class="text-6xl font-bold tracking-tight text-white "><span
-                                class=" bg-gradient-to-r from-green-900 via-green-600 to-green-300 inline-block text-transparent bg-clip-text italic font-bold">Manfaat</span>
-                            <span class="text-6xl cursor-grab" id="kebersihan-icon">🌳</span> Untuk Lingkungan
+                                class=" bg-gradient-to-r from-green-900 via-green-600 to-green-300 inline-block text-transparent bg-clip-text font-bold">Manfaat</span>
+                            <span class="text-6xl cursor-grab" id="kebersihan-icon">🌟</span> Untuk Lingkungan
                             Indonesia🇮🇩!
                         </h1>
                         <div class="mt-10 flex items-center justify-center gap-x-6">
@@ -182,16 +189,16 @@
                         style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
                     </div>
                 </div>
-                <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-                    <div class="px-7 py-3 text-lg leading-6 ">
-                        <i class="fa-solid fa-arrow-down-long text-white panah"></i>
-                        <a href="#"></a>
+                <div class=" sm:mb-10 sm:flex sm:justify-center sm:text-center lg:text-center md:text-center ">
+                    <div class=" relative rounded-full px-7 py-3 text-lg leading-6 text-white ring-1 ring-green-900 hover:ring-green-800">
+                      Lihat Manfaat-Manfaatnya🙌!</a>
                     </div>
-                </div>
+                  </div>
             </div>
             <!-- Hero -->
 
             <!-- Card -->
+
 
             <section class="text-gray-600 body-font">
                 <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -213,34 +220,16 @@
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
+
+            <section id="manfaat" class="mt-20 flex justify-center items-center p-8" id="manfaat">
+                <div class="manfaat-area">
+                    <div class="image-area">
+                        <img class="image-manfaat"
+                            src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/ykan/terrestrial/Ncs_1.jpg?crop=488%2C0%2C1953%2C1953&wid=640&hei=640&scl=3.0515625"
+                            alt="">
                     </div>
                 </div>
             </section>
-
-            <!-- <section class="mt-20 flex justify-center items-center p-8" id="manfaat">
-                <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-
-                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                        <img class="object-cover object-center rounded" alt="hero" src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/ykan/terrestrial/Ncs_1.jpg?crop=488%2C0%2C1953%2C1953&wid=640&hei=640&scl=3.0515625">
-                      </div>
-
-                    <div class="content-area">
-                        <div class="text-content">
-                            <h1 class="judul-manfaat">
-                                Keberlangsungan Alam
-                            </h1>
-                            <p class="isi-manfaat">
-                                Melindungi daratan dan perairan yang menjadi penyangga kehidupan. Jadilah bagian dari
-                                kami dalam menjaga alam <span class="isi-tebal">#UntukIndonesiaLestari.</span>
-                            </p>
-                            <a href="#" class="btn-manfaat">
-                                Lebih Banyak
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
 
 
             <section class="text-gray-600 body-font">
