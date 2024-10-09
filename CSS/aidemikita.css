@@ -80,10 +80,11 @@
     padding: 15px;
     border: 1px solid green;
     outline: none;
-    border-radius: 25px 0 0 25px;
+    border-radius: 25px ;
     font-size: 14px;
     background-color: #ffffffe6;
     color: green;
+    
   }
   
   #userInput::placeholder {
@@ -91,18 +92,12 @@
   }
   
   .btn-AI {
-    padding: 15px 30px;
-    background: white;
+    background-color: white;
     color: green;
+    padding: 15px 25px;
     border: none;
-    border-radius: 0 25px 25px 0;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
     transition: all 0.3s ease;
-  }
-  
-  .btn-AI:hover {
-    transform: scale(1.05);
   }
   
