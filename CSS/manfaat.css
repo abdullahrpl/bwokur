@@ -138,6 +138,22 @@
 
 /* teast */
 
+.gambar{
+    position: relative;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+
+.gambar:hover{
+    transform: scale(1.1);
+    border: 5px #15803d solid;
+}
+
+
+
 
 
 @keyframes Bounce {
