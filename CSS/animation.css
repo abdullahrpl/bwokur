@@ -72,7 +72,68 @@
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
 }
+#dataleft{
+  animation: fadeInRight linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+#dataright{
+  animation: fadeInLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+#btndata{
+  animation: fadeInDown linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
 /* DATA END */
+
+/* SAMPAH PLASTIK  */
+#imgsampah{
+  animation: pop linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+#sampahleft h2, #sampahleft div, #sampahleft p{
+  animation: fadeInRight linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+#sampahright p,  #sampahright a{
+  animation: fadeInUp linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+#sampahstat1, #sampahstat2, #sampahstat3{
+  animation: fadeInDown linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+#btnsampah{
+  animation: fadeInDown linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+/* SAMPAK PLASTIK END */
+
+/* FAQ */
+#faqtitle{
+    animation: fadeInDown linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+#faqlist{
+  animation: fadeIn linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+#faq .tab{
+  animation: fadeInUp linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+/* FAQ END */
 
 
 /* MANFAAT */
