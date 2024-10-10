@@ -1,4 +1,4 @@
-const hello_arr = ['AI DemiKita'];
+const hello_arr = ['DemiKita Games'];
 
 window.onload = function () {
     const spanHelloContainer = document.querySelector(".span-hello-container");
