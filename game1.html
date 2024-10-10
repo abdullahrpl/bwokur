@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game | DemiKita</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/game1.css" />
+    <link rel="stylesheet" href="CSS/hello.css">
+
+  </head>
+  <body>
+
+
+    <div class="bg-black h-full">
+        <!-- todo Hello -->
+      <div class="span-hello-container">
+        <span class="span-hello"></span>
+    </div>
+        <!-- todo Hello -->
+
+    <div class="cover-screen ">
+    <h1 class="text-white text-xl font-semibold mb-10 mt-10 hover:text-2xl hover:text-green-600">Click Sampah Untuk Mendapatkan Point🌟</h1>
+    <div class="text-menang">
+      <h2 id="over-text" class="hide">Game Winner</h2>
+      <p id="result"></p>
+    </div>
+      <button id="start-button">Main !</button>
+      <div id="Kembail" class="flex justify-end">
+        <a href="game.html" id="back-button">Kembali!</a>
+       </div>
+    </div>
+
+    <div id="Kembail" class="flex justify-end">
+    <a href="game.html" id="back-button">Kembali!</a>
+   </div>
+
+    <div id="score-container" class="hide">0</div>
+    <canvas id="canvas"></canvas>
+
+
+    <!-- JS -->
+    <script src="JS/game1.js"></script>
+    
+  </body>
+</html>
