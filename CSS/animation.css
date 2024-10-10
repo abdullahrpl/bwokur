@@ -13,6 +13,14 @@
     animation: fadeInDown 1s ease-in-out forwards;
     animation-delay: 2.5s;
 }
+#navbartri{
+  animation: fadeInDown 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+#navbarman{
+  animation: fadeInDown 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
 #herocomp1{
     animation: pop 1s ease-in-out forwards;
     animation-delay: 2.5s;
@@ -21,9 +29,80 @@
     animation: pop 1s ease-in-out forwards;
     animation-delay: 2s;
 }
+#herocomp1tri{
+  animation: pop 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+#herocomp2tri{
+  animation: pop 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+#herocomp3tri{
+  animation: pop 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+#herocomp1man{
+  animation: pop 1s ease-in-out forwards;
+  animation-delay: 1.4s;
+}
+#herocomp2man{
+  animation: pop 1s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
 /* HERO END */
 
 /* INFORMASI */
+#imgood{
+  animation: pop 1s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+#arup{
+  animation: fadeInUp linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+#tim h1, #tim p{
+  animation: fadeInDown linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+#mans #manleft, #manleft h1, #manleft p, #manleft div{
+  animation: fadeInRight linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+#mans #manright, #manright h1, #manright p, #manright div{
+  animation: fadeInLeft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+#wrapercard .cardtri{
+  animation: fadeInUp linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+#btntricard{
+  animation: fadeInDown linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+#donasititle h1{
+  animation: fadeInDown linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+#donleft h2, #donleft #donline, #donleft #donbank{
+  animation: fadeInRight linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+#uploaddon{
+  animation: fadeInDown linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
 #informasiTitle{
     animation: fadeInRight linear;
     animation-timeline: view();
