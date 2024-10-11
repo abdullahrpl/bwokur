@@ -4,9 +4,7 @@
 
 .circle {
     width: 3rem;
-    /* Equivalent to 12 units (w-12) */
     height: 3rem;
-    /* Equivalent to 12 units (h-12) */
     transition: all 0.3s ease-in-out;
 }
 
@@ -15,23 +13,18 @@
     transform: rotate(0deg);
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0;
-    /* Initially hide the arrow */
+
 }
 
 .container:hover .circle {
     width: 1.25rem;
-    /* Keep size consistent */
     height: 1.25rem;
-    /* Keep size consistent */
     border-radius: 100%;
-    /* Adjusted to show the arrow properly */
     transform: rotate(45deg);
-    /* Rotate the square */
     background-color: #19c16e;
 }
 
 .container:hover .circle .icon {
     opacity: 1;
-    /* Show the arrow */
 }
 

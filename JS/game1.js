@@ -99,7 +99,6 @@ function Fruit(image, x, y, width) {
   };
 }
 
-//Create a new fruit
 function createRandomFruit() {
   //set random time for next fruit
   randomCreationTime = generateRandomNumber(0, 5);
