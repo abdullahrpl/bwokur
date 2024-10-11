@@ -138,9 +138,135 @@
     border: 5px #15803d solid;
 }
 
+/* animasi */
+
+#navbar{
+    animation: fadeInDown 1s ease-in-out forwards;
+    animation-delay: 2.5s;
+}
+#navbartri{
+  animation: fadeInDown 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+#navbarman{
+  animation: fadeInDown 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+#navbargame{
+  animation: fadeInDown 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+#herocomp1game{
+  animation: pop 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+#herocomp2game{
+  animation: pop 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+#herocomp1{
+    animation: pop 1s ease-in-out forwards;
+    animation-delay: 2.5s;
+}
+#herocomp2{
+    animation: pop 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+#herocomp1tri{
+  animation: pop 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+#herocomp2tri{
+  animation: pop 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+#herocomp3tri{
+  animation: pop 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+#herocomp1man{
+  animation: pop 1s ease-in-out forwards;
+  animation-delay: 1.4s;
+}
+#herocomp2man{
+  animation: pop 1s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+/* HERO END */
+
+#mans #manleft, #manleft h1, #manleft p, #manleft div{
+    animation: fadeInRight linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+  #mans #manright, #manright h1, #manright p, #manright div{
+    animation: fadeInLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+
+  .tempat-text{
+    animation: fadeIn 10s linear;
+    animation-timeline: view();
+    animation-range: entry 0%, cover 90%;
+  }
+
+  .kartu{
+    animation: appear1 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0%, cover 40%;
+  }
+
+  #imgood{
+    animation: pop 1s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
 
 
 
+/* keyframe */
+
+@keyframes appear1 {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(100% 100% 0
+      0);
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+      scale: 1;
+
+    }
+  }
+
+  @keyframes appear2 {
+    from {
+      opacity: 0;
+      transform: translateX(-90px);
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+      scale: 1;
+
+    }
+  }
 
 @keyframes Bounce {
     from {
@@ -149,5 +275,215 @@
 
     to {
         transform: translateY(-50px) scale(1.5);
+    }
+}
+
+
+@keyframes popupFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* keyframe area */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes appear1 {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(100% 100% 0
+      0);
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+      scale: 1;
+
+    }
+  }
+
+  @keyframes appear2 {
+    from {
+      opacity: 0;
+      transform: translateX(-90px);
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+      scale: 1;
+
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(150px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes slideLeft {
+    from {
+      transform: translateX(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideRight {
+    from {
+      transform: translateX(-40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* keyframe khusus */
+  
+  @keyframes slideLeft1 {
+    from {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideRight1 {
+    from {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* keyframe khusus end */
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* KEYFRAMES */
+@keyframes pop {
+    from{
+        scale: 1.2;
+    } to{
+        scale: 1;
+    }
+}
+
+@keyframes fadeOutDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(70px);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(70px);
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-70px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(70px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
