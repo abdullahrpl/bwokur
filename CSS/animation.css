@@ -21,6 +21,18 @@
   animation: fadeInDown 1s ease-in-out forwards;
   animation-delay: 1.5s;
 }
+#navbargame{
+  animation: fadeInDown 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+#herocomp1game{
+  animation: pop 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+#herocomp2game{
+  animation: pop 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
 #herocomp1{
     animation: pop 1s ease-in-out forwards;
     animation-delay: 2.5s;
