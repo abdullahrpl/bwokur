@@ -63,11 +63,11 @@
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
 }
-#arup{
+/* #arup{
   animation: fadeInUp linear;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
-}
+} */
 #tim h1, #tim p{
   animation: fadeInDown linear;
     animation-timeline: view();
